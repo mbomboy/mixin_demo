@@ -1,0 +1,663 @@
+/* CSS Reset */
+/* line 4, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, em, img, small, strong, sub, sup, var,
+b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header, hgroup, menu, nav, section, menu, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* line 18, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+article, aside, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+/* Remove if not using HTML5 */
+/* line 19, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+nav ul {
+  list-style: none; }
+
+/* line 20, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none; }
+
+/* line 21, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+del {
+  text-decoration: line-through; }
+
+/* line 22, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help; }
+
+/* tables still need cellspacing="0" in the markup */
+/* line 24, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 25, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/* line 26, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+input, select {
+  vertical-align: middle; }
+
+/* END RESET CSS */
+/* Colors:
+Background: #4E4F48
+Highlight:  #C2CF52
+*/
+/* BASE STYLES */
+/* line 40, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+body, select, input, textarea {
+  color: #4E4F48; }
+
+/* line 41, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  text-rendering: optimizeLegibility; }
+
+/* line 42, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+html {
+  -webkit-font-smoothing: antialiased; }
+
+/* Accessible focus treatment */
+/* line 45, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+a:hover, a:active {
+  outline: none; }
+
+/* hand cursor on clickable input elements */
+/* line 48, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+label, input[type=button], input[type=submit], button {
+  cursor: pointer; }
+
+/*  j.mp/webkit-tap-highlight-color */
+/* line 51, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+a:link {
+  -webkit-tap-highlight-color: #FF5E99; }
+
+/* always force a scrollbar in non-IE */
+/* line 54, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+html {
+  overflow-y: scroll; }
+
+/* make buttons play nice in IE */
+/* line 57, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+button {
+  width: auto;
+  overflow: visible; }
+
+/* bicubic resizing for non-native sized IMG */
+/* line 60, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+.ie7 img {
+  -ms-interpolation-mode: bicubic; }
+
+/* videofitness styles */
+/* line 64, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+body {
+  background-color: #4E4F48;
+  font-family: "Trebuchet MS", san-serif;
+  font-size: 80%; }
+
+/* line 69, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#container {
+  width: 820px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 0 70px;
+  -moz-box-shadow: -3px 0px 5px #20211D;
+  -webkit-box-shadow: -3px 0px 5px #20211D;
+  box-shadow: -3px 0px 5px #000;
+  behavior: url(PIE.htc); }
+
+/* line 79, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+header {
+  height: 125px;
+  background: transparent url(../images/logo.png) no-repeat 0 18px;
+  border-bottom: 2px solid red;
+  position: relative;
+  margin-bottom: 25px; }
+
+/* line 86, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+header h1 {
+  text-indent: -9999px;
+  height: 44px; }
+
+/* line 90, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+.branding #logo {
+  display: block;
+  position: relative;
+  width: 280px;
+  height: 125px;
+  left: 0px;
+  overflow: hidden; }
+
+/* line 99, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+header form {
+  float: right;
+  margin-top: 45px; }
+
+/* line 103, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+header input {
+  position: relative;
+  height: 16px;
+  width: 150px;
+  border: 2px solid #4E4F48;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  behavior: url(PIE.htc); }
+
+/* line 114, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+header input[type="text"] {
+  padding: 5px;
+  background: url(../images/search.png) no-repeat 5px 5px;
+  padding-left: 30px;
+  font: bold italic 1.2em Georgia, "Times New Roman", Times, serif;
+  color: #ddd; }
+
+/* line 121, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+header input[type="submit"] {
+  height: 30px;
+  width: 40px;
+  font-weight: bold; }
+
+/* line 127, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+header .account {
+  position: absolute;
+  top: 20px;
+  right: 145px; }
+
+/* line 132, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+header .account a {
+  display: block;
+  font-size: .9em;
+  color: #4E4F48;
+  padding-top: 0px; }
+
+/* line 138, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+header .account a:hover {
+  text-decoration: underline; }
+
+/* line 139, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+header .account a[href^="cart"] {
+  position: absolute;
+  right: -100px;
+  top: 0;
+  height: 50px;
+  width: 86px;
+  margin-top: 18px; }
+
+/* line 147, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+header .account a[href^="cart"] img {
+  margin: -48px 25px 0 0; }
+
+/* line 150, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+header p {
+  font-weight: bold;
+  margin-top: 12px; }
+
+/* line 154, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+nav {
+  height: 30px;
+  margin: 45px 0 0;
+  line-height: 30px;
+  font-weight: bold; }
+
+/* line 160, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+nav ul li, footer ul li {
+  float: left; }
+
+/* line 163, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+nav ul li a {
+  position: relative;
+  width: 112px;
+  float: left;
+  background-color: #4E4F48;
+  margin-right: 5px;
+  text-align: center;
+  color: white;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  behavior: url(PIE.htc);
+  -moz-transition: background-color .3s ease-in;
+  -webkit-transition: background-color .3s ease-in;
+  -o-transition: background-color .3s ease-in;
+  transition: background-color .3s ease-in; }
+
+/* line 181, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+nav ul li a:hover {
+  background-color: red; }
+
+/* line 185, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+nav ul.account {
+  float: none;
+  margin-top: 0;
+  border: 1px solid #3FF; }
+
+/* line 191, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+header p {
+  text-align: right; }
+
+/* line 194, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#main {
+  hidden: overflow;
+  overflow: auto; }
+
+/* line 195, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#category #main {
+  height: 468px; }
+
+/* line 196, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#feature {
+  margin-bottom: 20px;
+  float: left;
+  position: relative; }
+
+/* line 197, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#feature img {
+  position: relative; }
+
+/* line 198, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+.new {
+  float: left; }
+
+/* line 199, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+.new span.overlay {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  bottom: -35px;
+  height: 35px;
+  width: 185px;
+  background-color: #4E4F48;
+  background-color: rgba(78, 79, 72, 0.8);
+  z-index: 100;
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in; }
+
+/* line 217, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+.new a:hover span.overlay {
+  opacity: 1;
+  bottom: 0; }
+
+/* line 221, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+span.overlay img {
+  padding-right: 6px; }
+
+/* line 223, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#ad {
+  clear: both;
+  margin: 10px 0 30px;
+  color: black;
+  font-size: 2em;
+  float: left; }
+
+/* line 230, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#newsletter {
+  height: 70px;
+  width: 70px;
+  margin-top: 10px;
+  padding: 10px 8px;
+  background-color: #4E4F48;
+  float: right;
+  font-weight: bold;
+  text-align: center; }
+
+/* line 240, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#newsletter a {
+  color: red; }
+
+/* line 241, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+footer {
+  clear: both;
+  font-size: .9em;
+  margin-top: 2em;
+  margin-left: -1em;
+  height: 30px; }
+
+/* line 249, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+footer li {
+  list-style: none; }
+
+/* line 250, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+footer li a {
+  padding: 0 .8em;
+  border-right: 1px solid #4E4F48;
+  color: #4E4F48; }
+
+/* line 251, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+a.last {
+  border-right: none; }
+
+/* line 253, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+h2 {
+  font-size: 2em; }
+
+/* line 255, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+img {
+  float: left; }
+
+/* line 256, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+.copyright {
+  text-align: right; }
+
+/* Workout Navigation Overlay Menu */
+/* line 259, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#type {
+  display: none;
+  background-color: #4E4F48;
+  width: 580px;
+  height: 260px;
+  position: absolute;
+  top: 119px;
+  left: 80px;
+  z-index: 200;
+  padding: 10px 0px 10px 10px;
+  line-height: 50px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  behavior: url(PIE.htc); }
+
+/* line 276, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#type li {
+  float: left;
+  width: 190px; }
+
+/* line 277, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#type li a {
+  color: white;
+  width: 180px;
+  margin: 8px;
+  text-align: left; }
+
+/* line 283, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#type img {
+  padding-right: 8px; }
+
+/* line 285, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#price {
+  float: right;
+  margin: -20px 280px 0 0;
+  font-weight: bold; }
+
+/* line 290, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#add {
+  clear: both;
+  margin: -23px 180px 18px 0;
+  float: right; }
+
+/* line 295, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#player_nav {
+  clear: both;
+  height: 48px;
+  font-weight: bold;
+  font-size: 1.2em;
+  list-style: none; }
+
+/* line 302, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#player_nav li {
+  float: left; }
+
+/* line 303, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#player_nav li a {
+  position: relative;
+  display: block;
+  width: 156px;
+  height: 43px;
+  line-height: 43px;
+  padding: 0 0 0 50px;
+  background: #4E4F48 url(../images/player.png) no-repeat;
+  border: 5px solid #4E4F48;
+  border-bottom: none;
+  color: white;
+  margin-right: 1px;
+  -moz-border-radius: 15px 15px 0 0;
+  -webkit-border-radius: 15px 15px 0 0;
+  -o-border-radius: 15px 15px 0 0;
+  border-radius: 15px 15px 0 0;
+  behavior: url(PIE.htc);
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in; }
+
+/* line 325, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#player_nav li.detail a {
+  background-position: 0 -43px; }
+
+/* line 326, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#player_nav li.video a {
+  background-position: 0 -129px; }
+
+/* line 327, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#player_nav li.review a {
+  background-position: 0 -215px; }
+
+/* line 329, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#player_nav li a:hover {
+  background-color: red;
+  border: 5px solid red;
+  border-bottom: none; }
+
+/* line 334, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#player_nav li a.active {
+  background: #ffffff url(../images/player.png) no-repeat;
+  color: #4E4F48;
+  height: 43px;
+  border: 5px solid #4E4F48;
+  border-bottom: none;
+  cursor: default; }
+
+/* line 342, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#player_nav li.detail a.active {
+  background-position: 0 0px; }
+
+/* line 343, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#player_nav li.video a.active {
+  background-position: 0 -86px; }
+
+/* line 344, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#player_nav li.review a.active {
+  background-position: 0 -172px; }
+
+/* line 346, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#player_nav li a[href^="#reviews"] {
+  margin-right: 0; }
+
+/* line 348, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#player_nav img {
+  vertical-align: middle;
+  margin: 0 10px;
+  float: none; }
+
+/* line 354, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#player {
+  width: 640px;
+  border: 5px solid #4E4F48;
+  border-top: none;
+  min-height: 400px;
+  float: left;
+  -moz-border-radius: 0 0 15px 15px;
+  -webkit-border-radius: 0 0 15px 15px;
+  -o-border-radius: 0 0 15px 15px;
+  border-radius: 0 0 15px 15px;
+  behavior: url(PIE.htc); }
+
+/* line 368, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#col1 {
+  float: left;
+  width: 200px;
+  padding: 15px; }
+
+/* line 369, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#col1 .stock {
+  font-size: 2em; }
+
+/* line 370, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#col1 p {
+  font-size: .9em;
+  line-height: 1.3em; }
+
+/* line 372, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#col2 {
+  float: left;
+  width: 370px;
+  padding: 15px; }
+
+/* line 373, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#col2 .description {
+  clear: left;
+  padding-top: 15px; }
+
+/* line 375, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#details, #video, #reviews {
+  clear: both;
+  overflow: hidden; }
+
+/* line 379, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+.classify {
+  clear: right;
+  margin-top: 10px; }
+
+/* line 380, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+.classify p {
+  line-height: 35px;
+  float: left;
+  font-weight: bold; }
+
+/* line 385, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+.classify img {
+  vertical-align: middle;
+  padding: 5px; }
+
+/* line 388, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#details {
+  line-height: 1.4em; }
+
+/* line 390, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#video {
+  width: 600px;
+  margin: auto;
+  padding: 15px; }
+
+/* line 395, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#reviews {
+  width: 590px;
+  margin: auto;
+  padding: 20px; }
+
+/* line 401, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#reviews img {
+  float: left; }
+
+/* line 402, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#reviews h3 {
+  float: left;
+  margin: 0 0 5px 5px;
+  font-size: 1.1em; }
+
+/* line 403, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#reviews p {
+  line-height: 1.4em;
+  margin: 0 0 1.2em 0; }
+
+/* line 404, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+p.reviewer {
+  clear: both;
+  font-size: .95em;
+  margin: 15px 4px; }
+
+/* line 407, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#sidebar {
+  margin: -48px 0 0 10px;
+  padding: 10px 15px 25px;
+  width: 130px;
+  height: 420px;
+  background-color: #4E4F48;
+  color: white;
+  float: right;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  behavior: url(PIE.htc); }
+
+/* line 421, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#sidebar img {
+  margin-left: 15px; }
+
+/* line 424, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#sidebar h3 {
+  margin: 5px 12px 10px;
+  font-size: 1.2em; }
+
+/* line 429, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#listing ul {
+  line-height: 50px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  behavior: url(PIE.htc); }
+
+/* line 437, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#listing img {
+  padding-right: 8px; }
+
+/* line 439, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#listing li {
+  list-style: none; }
+
+/* line 442, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#listing li a {
+  width: 200px;
+  margin: 10px;
+  display: block;
+  float: left;
+  line-height: 50px;
+  color: #4E4F48;
+  font-size: 1.3em;
+  margin-left: 1em;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in; }
+
+/* line 456, /Users/mnb1/Desktop/BWM399/Week_2_starter_files/sass_demo/scss/style.scss */
+#listing li a:hover {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  behavior: url(PIE.htc);
+  background-color: red; }
+
+/*# sourceMappingURL=style.css.map */
